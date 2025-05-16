@@ -11,6 +11,9 @@ body {
 h1{
   margin-left: 20px;
 }
+.layout-container{
+  display: flex;
+}
 .navsection {
   margin-left: 0;
   margin-top: 100px;
@@ -18,6 +21,9 @@ h1{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: fixed;
+  overflow-y: auto; /* om innehållet blir för långt */
+  height: 100vh; /* full höjd på viewporten */
 
 }
 
@@ -52,6 +58,7 @@ h1{
 /* 5. Länkar under 'Still': inget extra indrag */
 #projectsCollapse .nav-link {
   margin-left: 0;
+  color: #333333;
 }
 
 
@@ -59,6 +66,9 @@ h1{
 .collapse a.nav-link {
   padding-left: 10px;
   font-size: 1.2rem;
+  color: #333333;
+
+
 }
 
 

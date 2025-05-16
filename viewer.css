@@ -1,0 +1,117 @@
+body {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+h1{
+  margin-left: 20px;
+  margin-top: 20px ;
+}
+/* === NAVIGATION === */
+.navsection {
+  width: 350px;
+  height: 150vh;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  margin-left: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.navbar {
+  display: block;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 20px;
+  padding: 0;
+}
+
+/* 3. Nav-länkar: alla länkar i nav */
+.navbar .nav-link {
+  color: #333333;
+  text-transform: none;
+  margin-top: 3px;
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+/* 4. Första länken: ingen övre marginal */
+.navbar .nav-link:first-child {
+  margin-top: 0;
+}
+#projectsCollapse {
+  position: relative;
+  z-index: 20;
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+#projectsCollapse .nav-link {
+  padding-left: 20px;
+  font-size: 1.2rem;
+  margin-left: 0;
+}
+
+/* Collapse länkar (under Still) */
+.collapse a.nav-link {
+  padding-left: 20px;
+  font-size: 0.5rem;
+}
+
+
+
+/* === BILDOMRÅDE === */
+.image-area {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  padding: 10px 10px; /* Luft runt bilden */
+  box-sizing: border-box;
+}
+
+#viewer-img {
+  max-width: 90%; /* Luft runt bilden  width: 950px; */
+  max-height: 90%; /* Luft runt bilden  height: 750px;*/
+  /*height: auto;
+  width: auto;*/
+  display: block;
+ 
+}
+
+/* === KONTROLLKNAPPAR === */
+.controls {
+  position: fixed;/*fixed Anpassat efter navsection left: 20px;*/
+  bottom: 20px;
+  left: 20px; /* Anpassat efter navsection left: 20px;*/
+  display: flex;
+  gap: 20px;
+  z-index: 5;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f3f4f5;
+  color: rgb(31, 31, 31);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #e4e5e6;
+}
