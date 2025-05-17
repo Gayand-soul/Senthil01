@@ -17,6 +17,7 @@ h1{
 .navsection {
   margin-left: 0;
   margin-top: 100px;
+  margin-right: 5px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -33,6 +34,7 @@ h1{
   flex-direction: column;
   text-align: left;
   margin-left: 20px;
+  margin-right: 100px;
   padding: 0;
 }
 
@@ -43,7 +45,7 @@ h1{
   margin-top: 3px;
   margin-left: 0;
   padding-left: 0;
-  font-size: 1.5rem;
+  font-size: 1.0rem;
   text-decoration: none;
   display: block;
   width: 100%;
@@ -65,7 +67,7 @@ h1{
 /* Collapse länkar (under Still) */
 .collapse a.nav-link {
   padding-left: 10px;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color: #333333;
 
 
@@ -76,7 +78,7 @@ h1{
 .container {
   display: flex;                /* Använd flexbox för att skapa två kolumner */
   justify-content: center;       /* Centrerar kolumnerna horisontellt */
-  margin-left: 100px;            /* Skapa utrymme till vänster för navbar */
+  margin-left: 200px;            /* Skapa utrymme till vänster för navbar */
   gap: 9px;                      /* Gap mellan de två kolumnerna */
   margin-top: 100px;             /* Margin-top för att hålla utrymme från navbaren */
 }
@@ -86,9 +88,10 @@ h1{
   display: flex;                /* Använd flexbox för att ordna bilderna vertikalt */
   flex-direction: column;       /* Lägg bilderna under varandra */
   gap: 9px;                     /* Gap mellan bilderna i kolumnen */
-  max-width: 400px;  
+  max-width: 300px;  
   justify-content: flex-end; 
   text-align: end;
+  margin-left: 250px;
 }
 
 /* Bilder */
@@ -105,7 +108,7 @@ h1{
   display: flex;                /* Använd flexbox för att ordna bilderna vertikalt */
   flex-direction: column;       /* Lägg bilderna under varandra */
   gap: 8px;                     /* Gap mellan bilderna i kolumnen */
-  max-width: 400px;  
+  max-width: 300px;  
   justify-content:flex-start; 
   text-align:start;
 }

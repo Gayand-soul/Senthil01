@@ -2,7 +2,7 @@
 if (window.location.pathname.includes('index.html') || window.location.pathname === '/') {
   // === JS för index.html ===
 
-  document.querySelectorAll('.image-column img, .image-column2 img').forEach((img, index) => {
+  document.querySelectorAll('.image-column1 img, .image-column2 img').forEach((img, index) => {
     img.addEventListener('click', event => {
       event.preventDefault();
 
