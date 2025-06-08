@@ -7,21 +7,29 @@ body {
   background-color: #f4f4f4;
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
-/* 1. Navsection: yttre container för navigation */
-h1{
-  margin-left: 20px;
+.vh{
+  color: black;
+  font-weight: bolder;
 }
+
+
+/* 1. Navsection: yttre container för navigation */
+
+h1{
+  margin-left: 10px;
+  margin-top: 20px ;
+}
+
 .layout-container{
   display: flex;
 }
 .navsection {
-  margin-left: 0;
   margin-top: 100px;
-  margin-right: 5px;
+  margin-right: 0px;
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   position: fixed;
   overflow-y: auto; /* om innehållet blir för långt */
   height: 100vh; /* full höjd på viewporten */
@@ -32,9 +40,9 @@ h1{
 .navbar {
   display: block;
   flex-direction: column;
-  text-align: left;
+  text-align: right;
   margin-left: 20px;
-  margin-right: 100px;
+  margin-right: 0px;
   padding: 0;
 }
 
@@ -43,13 +51,13 @@ h1{
   color: #333333;
   text-transform: none;
   margin-top: 3px;
-  margin-left: 0;
+  margin-right: 0;
   padding-left: 0;
-  font-size: 1.0rem;
+  font-size: 1.2rem;
   text-decoration: none;
   display: block;
   width: 100%;
-  text-align: left;
+  text-align: right;
 }
 
 /* 4. Första länken: ingen övre marginal */
@@ -58,19 +66,32 @@ h1{
 }
 
 /* 5. Länkar under 'Still': inget extra indrag */
-#projectsCollapse .nav-link {
+#projectsStillCollapse .nav-link {
+  margin-left: 0;
+  color: #333333;
+}
+/* 5. Länkar under 'Street': inget extra indrag */
+#projectsStreetCollapse .nav-link {
+  margin-left: 0;
+  color: #333333;
+}
+/* 5. Länkar under 'City': inget extra indrag */
+#projectsCityCollapse .nav-link {
+  margin-left: 0;
+  color: #333333;
+}
+#projectsPeopleCollapse .nav-link {
   margin-left: 0;
   color: #333333;
 }
 
 
+
 /* Collapse länkar (under Still) */
 .collapse a.nav-link {
   padding-left: 10px;
-  font-size: 0.8rem;
+  font-size: 1.0rem;
   color: #333333;
-
-
 }
 
 
@@ -88,7 +109,7 @@ h1{
   display: flex;                /* Använd flexbox för att ordna bilderna vertikalt */
   flex-direction: column;       /* Lägg bilderna under varandra */
   gap: 9px;                     /* Gap mellan bilderna i kolumnen */
-  max-width: 300px;  
+  max-width: 400px;  
   justify-content: flex-end; 
   text-align: end;
   margin-left: 250px;
@@ -98,7 +119,6 @@ h1{
 .image-column1 img {
   max-width: 100%;              /* Bilderna ska fylla kolumnens bredd */
   height: auto;                 /* Behåller bildens proportioner */
-  border: 1px solid #5f5f5f;   /* Tunn grå kant runt bilderna */
   cursor: pointer;             /* Handpekare när man hovrar över bilder */
   transition: transform 0.3s ease; /* Smidig övergång vid hovring */
 }
@@ -108,7 +128,7 @@ h1{
   display: flex;                /* Använd flexbox för att ordna bilderna vertikalt */
   flex-direction: column;       /* Lägg bilderna under varandra */
   gap: 8px;                     /* Gap mellan bilderna i kolumnen */
-  max-width: 300px;  
+  max-width: 400px;  
   justify-content:flex-start; 
   text-align:start;
 }
@@ -116,19 +136,10 @@ h1{
 .image-column2 img {
   max-width: 100%;              /* Bilderna ska fylla kolumnens bredd */
   height: auto;                 /* Behåller bildens proportioner */
-  border: 1px solid #5f5f5f;   /* Tunn grå kant runt bilderna */
   cursor: pointer;             /* Handpekare när man hovrar över bilder */
   transition: transform 0.3s ease; /* Smidig övergång vid hovring */
 }
 
-
-.viewer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px; /* om du vill ha avstånd från toppen */
-  gap: 20px; /* avstånd mellan knappar och bilden */
-}
 
 
 
