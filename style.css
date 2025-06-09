@@ -145,6 +145,14 @@ h1{
   transition: transform 0.3s ease; /* Smidig övergång vid hovring */
 }
 
-
+/* FELSÖKNINGSHJÄLP */
+.debug-bilder {
+  border: 3px solid lime !important;
+  position: relative !important;
+  z-index: 9999 !important;
+  margin-left: 0 !important;
+  opacity: 1 !important;
+  width: 200px !important;
+}
 
 
