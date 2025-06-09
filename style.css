@@ -102,7 +102,7 @@ h1{
   margin-left: 200px;            /* Skapa utrymme till vänster för navbar */
   gap: 9px;                      /* Gap mellan de två kolumnerna */
   margin-top: 100px;             /* Margin-top för att hålla utrymme från navbaren */
-  margin-left: 200px;  /*.Original margin-left: 250px;.om inte bra kan jag radera sedan  ..........................*/
+  
 }
 
 /* Varje bildkolumn */
@@ -113,9 +113,8 @@ h1{
   max-width: 400px;  
   justify-content: flex-end; 
   text-align: end;
-  margin-left: 0; /*.Original margin-left: 250px;.............................................................*/
-  border: 2px solid red;/*.Original margin-left: 250px;........................................................*/
-
+  margin-left: 250px;
+ 
 }
 
 /* Bilder */
@@ -124,8 +123,7 @@ h1{
   height: auto;                 /* Behåller bildens proportioner */
   cursor: pointer;             /* Handpekare när man hovrar över bilder */
   transition: transform 0.3s ease; /* Smidig övergång vid hovring */
-  position: relative; /*.Original margin-left: 250px;........................................................*/
-  z-index: 10; /*.Original margin-left: 250px;...............................................................*/
+ 
 }
 
 /* Varje bildkolumn */
@@ -145,14 +143,5 @@ h1{
   transition: transform 0.3s ease; /* Smidig övergång vid hovring */
 }
 
-/* FELSÖKNINGSHJÄLP */
-.debug-bilder {
-  border: 3px solid lime !important;
-  position: relative !important;
-  z-index: 9999 !important;
-  margin-left: 0 !important;
-  opacity: 1 !important;
-  width: 200px !important;
-}
 
 
